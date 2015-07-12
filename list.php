@@ -36,7 +36,7 @@ td,th {border: solid 1px #000000}
 </tr>
 <?php foreach ($list as $i => $row): ?>
 <tr>
-<td><?php echo $i ?></td>
+<td><?php echo $i+1 ?></td>
 <td><?php echo $row['title'] ?></td>
 <td><?php echo $row['author'] ?></td>
 <td><?php echo $row['json_file'] ?></td>
