@@ -1,0 +1,10 @@
+{
+    "name": "tadasy/manga-rakuten-image",
+    "authors": [
+        {
+            "name": "tadasy",
+            "email": "tadasy@gmail.com"
+        }
+    ],
+    "require": {}
+}
