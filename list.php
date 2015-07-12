@@ -42,10 +42,13 @@ td,th {border: solid 1px #000000}
 <td><?php echo $row['json_file'] ?></td>
 <td>
 <?php if (empty($row['image_url'])): ?>
-画像なし <a href="">検索</a>
+画像なし
 <?php else: ?>
 <img src="<?php echo $row['image_url'] ?>">
 <?php endif; ?>
+<br>
+<a href="http://search.books.rakuten.co.jp/bksearch/nm?f=A&sitem=<?php echo urlencode(mb_convert_encoding($row['title'], 'EUC-JP', 'UTF-8')); ?>&g=001">楽天検索</a>&nbsp;
+<a href="">API検索</a>
 </td>
 </tr>
 <?php endforeach; ?>
