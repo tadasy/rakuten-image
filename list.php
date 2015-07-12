@@ -47,8 +47,8 @@ td,th {border: solid 1px #000000}
 <img src="<?php echo $row['image_url'] ?>">
 <?php endif; ?>
 <br>
-<a href="http://search.books.rakuten.co.jp/bksearch/nm?f=A&sitem=<?php echo urlencode(mb_convert_encoding($row['title'], 'EUC-JP', 'UTF-8')); ?>&g=001">楽天検索</a>&nbsp;
-<a href="">API検索</a>
+<a href="http://search.books.rakuten.co.jp/bksearch/nm?f=A&sitem=<?php echo urlencode(mb_convert_encoding($row['title'], 'EUC-JP', 'UTF-8')); ?>&g=001" target="_blank">楽天検索</a>&nbsp;
+<a href="" target="_blank">API検索</a>
 </td>
 </tr>
 <?php endforeach; ?>
