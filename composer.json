@@ -6,5 +6,7 @@
             "email": "tadasy@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "ext-mbstring": "*"
+    }
 }
