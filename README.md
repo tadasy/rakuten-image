@@ -36,3 +36,4 @@ heroku git:remote -a rakuten-images
 # デプロイ
 git push heroku master
 ```
+https://rakuten-images.herokuapp.com/list.php
