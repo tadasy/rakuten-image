@@ -19,6 +19,7 @@ while (($row = fgetcsv($handle, 0, "\t")) !== false) {
 ?>
 <html>
 <head>
+<meta charset="UTF-8">
 <title>楽天の画像</title>
 <style>
 table {border: solid 1px #000000; border-collapse: collapse;}

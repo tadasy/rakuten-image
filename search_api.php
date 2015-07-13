@@ -8,10 +8,10 @@ $author = isset($_GET['author']) ? $_GET['author'] : null;
 
 $client = new RakutenRws_Client();
 // アプリID (デベロッパーID) をセットします
-$client->setApplicationId('');
+$client->setApplicationId(getenv('RAKUTEN_APPLICATION_ID'));
  
 // アフィリエイトID をセットします(任意)
-$client->setAffiliateId('');
+$client->setAffiliateId(getenv('RAKUTEN_AFFILIATE_ID'));
  
 // IchibaItem/Search API から、keyword=うどん を検索します
 $options = [];
@@ -28,6 +28,7 @@ if (!$response->isOk()) {
 ?>
 <html>
 <head>
+<meta charset="UTF-8">
 <title>楽天の画像検索</title>
 <style>
 table {border: solid 1px #000000; border-collapse: collapse;}
