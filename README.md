@@ -27,5 +27,12 @@ http://localhost:8080
 ## deploy heroku
 
 ```zsh
+# herokuコマンドを入れていなければインストール
+brew install heroku
+# herokuにログイン
+heroku login
+# herokuリポジトリを追加
+heroku git:remote -a rakuten-images
+# デプロイ
 git push heroku master
 ```
